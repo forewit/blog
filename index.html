@@ -7,10 +7,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
 		<link href="./app/immutable/assets/0.BdP0o02s.css" rel="stylesheet">
-		<link rel="modulepreload" href="./app/immutable/entry/start.ClZROFlw.js">
-		<link rel="modulepreload" href="./app/immutable/chunks/entry.CRK__15c.js">
+		<link rel="modulepreload" href="./app/immutable/entry/start.DscV_HqO.js">
+		<link rel="modulepreload" href="./app/immutable/chunks/entry.DAwH03gZ.js">
 		<link rel="modulepreload" href="./app/immutable/chunks/scheduler.CtbWrGNo.js">
-		<link rel="modulepreload" href="./app/immutable/entry/app.NsOb30nm.js">
+		<link rel="modulepreload" href="./app/immutable/entry/app.BN4oplJi.js">
 		<link rel="modulepreload" href="./app/immutable/chunks/index.D1XC8u_W.js">
 		<link rel="modulepreload" href="./app/immutable/nodes/0.CSHzpV4C.js">
 		<link rel="modulepreload" href="./app/immutable/nodes/2.BRoonHgP.js"><!-- HEAD_svelte-1xk05yi_START --><meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover"><!-- HEAD_svelte-1xk05yi_END -->
@@ -20,7 +20,7 @@
 			
 			<script>
 				{
-					__sveltekit_1cvuis6 = {
+					__sveltekit_1ygrjh8 = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						assets: "/blog"
 					};
@@ -30,8 +30,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./app/immutable/entry/start.ClZROFlw.js"),
-						import("./app/immutable/entry/app.NsOb30nm.js")
+						import("./app/immutable/entry/start.DscV_HqO.js"),
+						import("./app/immutable/entry/app.BN4oplJi.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2],
@@ -40,6 +40,12 @@
 							error: null
 						});
 					});
+
+					if ('serviceWorker' in navigator) {
+						addEventListener('load', function () {
+							navigator.serviceWorker.register('./service-worker.js');
+						});
+					}
 				}
 			</script>
 		</div>
