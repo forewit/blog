@@ -1,8 +1,9 @@
 <script>
   import Card from "$lib/Components/Card.svelte";
+  import { base } from "$app/paths";
 </script>
 
-<div id="container">
+<div id="container" style="background-image: url('{base}/images/field-background.jpg');">
   <h1 class="title">Jessica Helen Anderson</h1>
   <div class="carousell">
     <input type="radio" name="slider" id="item-1" checked />
@@ -29,8 +30,6 @@
   #container {
     width: 100%;
     height: 100%;
-
-    background-image: url("images/field-background.jpg");
     background-size: cover;
 
     display: flex;

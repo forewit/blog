@@ -1,7 +1,6 @@
 <script>
   export let title = "Title"
   export let subtitle = "Subtitle"
-  export let img = "images/icon.svg"
 </script>
 
 <div class="container">
