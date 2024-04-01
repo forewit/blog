@@ -30,15 +30,16 @@
 
   /* global CSS variables */
   :global(:root) {
-    --global-background: #f5f5f5;
+    --global-background: whitesmoke;
+    --global-color: whitesmoke;
   }
   :global(*) {
     box-sizing: border-box;
-    font-family: "Poltawski Nowy";
     margin: 0;
     padding: 0;
   }
   :global(html, body) {
     background: var(--global-background);
+    color: var(--global-color);
   }
 </style>
