@@ -30,7 +30,7 @@
 
   /* global CSS variables */
   :global(:root) {
-    --global-background: whitesmoke;
+    --global-background: #f5f5f5;
   }
   :global(*) {
     box-sizing: border-box;

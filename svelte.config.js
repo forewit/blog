@@ -14,7 +14,7 @@ const config = {
 		appDir: 'app',
 		adapter: adapter(),
 		paths: {
-			base: process.env.NODE_ENV === "production" ? "/demos" : "",
+			base: process.env.NODE_ENV === "production" ? "/blog" : "",
 		}
 	}
 };
