@@ -1,3 +1,7 @@
+<script>
+    import { base } from "$app/paths";
+</script>
+
 <svelte:head>
   <meta
     name="viewport"
@@ -13,6 +17,7 @@
 
 <style>
   .container {
+    background-size: cover;
     /* make fullscreen */
     position: fixed;
     top: 0;
@@ -20,7 +25,6 @@
     right: 0;
     bottom: 0;
   }
-
   .content {
     /* fill container */
     position: absolute;
@@ -32,6 +36,7 @@
   :global(:root) {
     --global-background: whitesmoke;
     --global-color: whitesmoke;
+    --global-transition: 0.3s
   }
   :global(*) {
     box-sizing: border-box;

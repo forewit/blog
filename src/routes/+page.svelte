@@ -1,128 +1,144 @@
-<script>
+<script lang="ts">
   import Card from "$lib/Components/Card.svelte";
   import { base } from "$app/paths";
+
+  let posts = [
+    {
+    title: "Floral Photography: Capturing Nature's Splendor",
+    subtitle: "Learning techniques to capture the beauty of flowers through photography.",
+    image: "https://source.unsplash.com/featured/?flowers,photography",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "The Healing Power of Flowers",
+    subtitle: "Exploring the therapeutic benefits of floral essences and aromatherapy.",
+    image: "https://source.unsplash.com/featured/?flowers,therapy",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "Floral Fashion: Trends and Inspirations",
+    subtitle: "Discovering how flowers influence and inspire the world of fashion.",
+    image: "https://source.unsplash.com/featured/?flowers,fashion",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "Embracing Floral Decor in Your Home",
+    subtitle: "Incorporating flowers and botanical elements to enhance your living space.",
+    image: "https://source.unsplash.com/featured/?flowers,home",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "Flowers Around the World: A Cultural Journey",
+    subtitle: "Exploring the significance and traditions of flowers in different cultures.",
+    image: "https://source.unsplash.com/featured/?flowers,culture",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "The Art of Ikebana: Japanese Flower Arranging",
+    subtitle: "Learning the ancient art of harmonious flower arrangement from Japan.",
+    image: "https://source.unsplash.com/featured/?flowers,ikebana",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "Flower Festivals: Celebrating Nature's Splendor",
+    subtitle: "Participating in colorful and joyous festivals dedicated to flowers around the world.",
+    image: "https://source.unsplash.com/featured/?flowers,festival",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "Edible Flowers: Culinary Delights from the Garden",
+    subtitle: "Exploring the culinary uses and flavors of edible flowers in cooking.",
+    image: "https://source.unsplash.com/featured/?flowers,edible",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "Preserving Flowers: Techniques for Lasting Beauty",
+    subtitle: "Discovering methods to preserve flowers and create long-lasting floral arrangements.",
+    image: "https://source.unsplash.com/featured/?flowers,preservation",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "Flowers in Literature: Symbolism and Inspiration",
+    subtitle: "Exploring the role of flowers as symbols and motifs in literature and poetry.",
+    image: "https://source.unsplash.com/featured/?flowers,literature",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "The Language of Flowers: A Historical Perspective",
+    subtitle: "Tracing the history and evolution of the symbolic language of flowers.",
+    image: "https://source.unsplash.com/featured/?flowers,language",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "Floral Artistry: Creative Expressions in Flower Arranging",
+    subtitle: "Exploring innovative and artistic approaches to floral design and arrangement.",
+    image: "https://source.unsplash.com/featured/?flowers,artistry",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "The Botanical Gardens: A Haven of Natural Splendor",
+    subtitle: "Immersing yourself in the beauty and diversity of botanical gardens around the world.",
+    image: "https://source.unsplash.com/featured/?flowers,gardens",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "Flowers in Mythology: Legends and Lore",
+    subtitle: "Exploring the mythical and symbolic significance of flowers in ancient myths and legends.",
+    image: "https://source.unsplash.com/featured/?flowers,mythology",
+    link: `${base}/the-seasons`,
+  }
+  ];
 </script>
 
-<div id="container" style="background-image: url('{base}/images/field-background.jpg');">
+<div
+  class="grid"
+  style="background-image: url('{base}/images/field-background.jpg');"
+>
   <h1 class="title">Jessica Helen Anderson</h1>
-  <div class="carousell">
-    <input type="radio" name="slider" id="item-1" checked />
-    <input type="radio" name="slider" id="item-2" />
-    <input type="radio" name="slider" id="item-3" />
-    <div class="cards">
-      <label class="card" for="item-1" id="post-1">
-        <img src="images/flowers.jpg" alt="post" />
-      </label>
-      <label class="card" for="item-2" id="post-2">
-        <img src="images/baby.jpg" alt="post" />
-      </label>
-      <label class="card" for="item-3" id="post-3">
-        <img src="images/road.jpg" alt="post" />
-      </label>
+  <div class="cards">
+    {#each posts as post}
+    <div class="card">
+        <Card
+        title={post.title}
+        subtitle={post.subtitle}
+        link={post.link}
+        image={post.image}
+      ></Card>
     </div>
-  </div>
-  <div class="info">
-    <Card></Card>
+    {/each}
   </div>
 </div>
 
 <style>
-  #container {
+  .grid {
     width: 100%;
     height: 100%;
+    padding-top: 20px;
     background-size: cover;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 10px;
+    display: grid;
+    grid-template-rows: min-content, 1fr;
+    justify-items: center;
+    gap: 20px;
   }
+
   .title {
-    padding: 20px;
-    padding-bottom: 30px;
     text-align: center;
   }
-
-  input[type="radio"] {
-    display: none;
-  }
-
-  .card {
-    position: absolute;
-    width: 70%;
-
-    height: 100%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transition: transform 0.4s ease;
-    cursor: pointer;
-
-    
-  }
-
-  .carousell {
-    width: 100%;
-    max-width: 800px;
-    max-height: 600px;
-    height: 100%;
-    transform-style: preserve-3d;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .cards {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 20px;
-    opacity: 0.9;
-  }
+    /* hide scrollbar but allow scrolling */
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
 
-  img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    -o-object-fit: cover;
-    object-fit: cover;
+    padding: 30px;
   }
-
-  #item-1:checked ~ .cards #post-3,
-  #item-2:checked ~ .cards #post-1,
-  #item-3:checked ~ .cards #post-2 {
-    transform: translatex(-30%) scale(0.8);
-    opacity: 0.4;
-    z-index: 0;
+  .card {
+    position: sticky;
+    top: 0;
+    padding: 10px;
   }
-
-  #item-1:checked ~ .cards #post-2,
-  #item-2:checked ~ .cards #post-3,
-  #item-3:checked ~ .cards #post-1 {
-    transform: translatex(30%) scale(0.8);
-    opacity: 0.4;
-    z-index: 0;
-  }
-
-  #item-1:checked ~ .cards #post-1,
-  #item-2:checked ~ .cards #post-2,
-  #item-3:checked ~ .cards #post-3 {
-    transform: translatex(0) scale(1);
-    opacity: 1;
-    z-index: 1;
-  }
-  #item-1:checked ~ .cards #post-1 img,
-  #item-2:checked ~ .cards #post-2 img,
-  #item-3:checked ~ .cards #post-3 img {
-    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
-  }
-
-  .info {
-    height: 150px;
-    padding-bottom: 30px;
-    border-radius: 8px;
-    min-width: 320px;
+  .cards::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
   }
 </style>
