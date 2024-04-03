@@ -1,6 +1,4 @@
 <script>
-  import { goto } from "$app/navigation";
-
   export let title = "Title";
   export let subtitle = "Subtitle";
   export let link = "";
@@ -8,19 +6,18 @@
 </script>
 
 <a class="container" href={link}>
-  <img src="{image}" alt="">
   <div class="grid">
-    <h2>{title}</h2>
-    <p>{subtitle}</p>
+    <img class="image" src="{image}" alt="">
+    <h2 class="title">{title}</h2>
+    <p class="subtitle">{subtitle}</p>
   </div>
 </a>
 
 <style>
   .container {
-    /* sizing */
+    position: relative;
     display: block;
-    height: min-content;
-    min-height: 200px;
+    min-height: 120px;
 
     /* glass */
     backdrop-filter: blur(4px);
@@ -36,19 +33,26 @@
   }
   .grid {
     display: grid;
+    grid-template-columns: 30% 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  grid-template-areas: 
+    "image title"
+    "image subtitle"; 
     gap: 10px;
   }
 
-  img {
+  .image {
+    grid-area: image;
+    
     pointer-events: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-
     width: 100%;
     height: 100%;
-    border-radius: 10px;
-    opacity: 0.3;
     object-fit: cover;
+  }
+  .title {
+    grid-area: title;
+  }
+  .subtitle {
+    grid-area: subtitle;
   }
 </style>

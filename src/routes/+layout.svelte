@@ -36,7 +36,7 @@
   :global(:root) {
     --global-background: whitesmoke;
     --global-color: whitesmoke;
-    --global-transition: 0.3s
+    --global-transition: 80ms;
   }
   :global(*) {
     box-sizing: border-box;
