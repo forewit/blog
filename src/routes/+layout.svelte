@@ -1,12 +1,16 @@
 <script>
-    import { base } from "$app/paths";
+
+  import { buildErrorMessage } from "vite";
+
 </script>
+
 
 <svelte:head>
   <meta
     name="viewport"
     content="width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover"
   />
+  <title>Jessica Helen Blog</title>
 </svelte:head>
 
 <div class="container">
