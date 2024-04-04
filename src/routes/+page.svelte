@@ -186,13 +186,13 @@
     display: none; /* for Chrome, Safari, and Opera */
   }
   .cards {
-    padding: 10px;
+    padding: 15px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 13px;
   }
   .card {
     max-width: 400px;
