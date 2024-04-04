@@ -1,10 +1,3 @@
-<script>
-
-  import { buildErrorMessage } from "vite";
-
-</script>
-
-
 <svelte:head>
   <meta
     name="viewport"
