@@ -1,12 +1,12 @@
 {
     "name": "Jessica Helen",
-    "short_name": "Blog",
+    "short_name": "Jessica Helen",
     "description": "Thoughts about life and godliness",
     "start_url": "/blog/",
     "scope": "/blog/",
     "display": "standalone",
-    "background_color": "#f5f5f5",
-    "theme_color": "#f5f5f5",
+    "background_color": "#007395",
+    "theme_color": "#007395",
     "icons": [
         {
             "src": "images/field-icon.png",
