@@ -62,6 +62,7 @@ Staring up at the night sky, we witness an awe-inspiring display of countless st
 }
 main {
   transition: background-color 0.5s, color 0.5s;
+  color: #333;
 }
 .dark {
   background-color: #333;
