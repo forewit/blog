@@ -12,7 +12,7 @@
   
   <Post markdownURL={data.url} />
    
-<a class="backButton" href="{base}/"><img src="{base}/images/icon.svg" alt="home"></a>
+<a class="backButton" href="{base}/"><img src="{base}/images/back-button.svg" alt="home"></a>
 
 <style>
   .backButton {
@@ -20,13 +20,14 @@
     bottom: 30px;
     left: 20px;
 
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
 
     backdrop-filter: blur(4px);
+    background-color: rgba(0,0,0,0.2);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 20px;
+    border-radius: 50%;
     padding: 5px;
 
     transition: all var(--global-transition);

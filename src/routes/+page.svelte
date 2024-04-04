@@ -109,17 +109,19 @@
   style="background-image: url('{base}/images/field-background.jpg');"
 >
   <h1 class="title">Jessica Helen Anderson</h1>
-  <div class="cards">
-    {#each posts as post}
-      <div class="card">
-        <Card
-          title={post.title}
-          subtitle={post.subtitle}
-          link={post.link}
-          image={post.image}
-        ></Card>
-      </div>
-    {/each}
+  <div class="page">
+    <div class="cards">
+      {#each posts as post}
+        <div class="card">
+          <Card
+            title={post.title}
+            subtitle={post.subtitle}
+            link={post.link}
+            image={post.image}
+          ></Card>
+        </div>
+      {/each}
+    </div>
     <div class="verse">
       <blockquote class="quote-card">
         <p>The Spirit of the Lord God is upon me,</p>
@@ -127,16 +129,22 @@
         <p>to bring good news to the poor;</p>
         <p class="indent">he has sent me to bind up the brokenhearted,</p>
         <p>to proclaim liberty to the captives,</p>
-        <p class="indent">and the opening of the prison to those who are bound;</p>
+        <p class="indent">
+          and the opening of the prison to those who are bound;
+        </p>
         <p>to proclaim the year of the Lord's favor,</p>
         <p class="indent">and the day of vengeance of our God;</p>
         <p class="indent">to comfort all who mourn;</p>
         <p>to grant to those who mourn in Zion—</p>
-        <p class="indent">to give them a beautiful headdress instead of ashes,</p>
+        <p class="indent">
+          to give them a beautiful headdress instead of ashes,
+        </p>
         <p>the oil of gladness instead of mourning,</p>
         <p class="indent">the garment of praise instead of a faint spirit;</p>
         <p>that they may be called oaks of righteousness,</p>
-        <p class="indent">the planting of the Lord, that he may be glorified.</p>
+        <p class="indent">
+          the planting of the Lord, that he may be glorified.
+        </p>
         <p>They shall build up the ancient ruins;</p>
         <p class="indent">they shall raise up the former devastations;</p>
         <p>they shall repair the ruined cities,</p>
@@ -159,17 +167,25 @@
     grid-template-rows: min-content, 1fr;
     justify-items: center;
     gap: 20px;
+
+    overflow: hidden;
   }
 
   .title {
     text-align: center;
   }
-  .cards {
+  .page {
     /* hide scrollbar but allow scrolling */
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
     overflow-y: scroll;
-
+    overflow-x: hidden;
+  }
+  .page::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+  .cards {
+    padding: 25px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -184,9 +200,6 @@
   }
   .card:hover {
     scale: 1.05;
-  }
-  .cards::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
   }
 
   .verse {
@@ -214,7 +227,7 @@
     margin: 0;
   }
   .quote-card p .indent {
-    margin-left:5px;
+    margin-left: 5px;
   }
   .quote-card cite {
     font-size: 16px;
