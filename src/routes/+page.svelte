@@ -4,103 +4,95 @@
 
   let posts = [
     {
-      title: "Floral Photography: Capturing Nature's Splendor",
-      subtitle:
-        "Learning techniques to capture the beauty of flowers through photography.",
-      image: "https://source.unsplash.com/featured/?flowers,photography",
-      link: `${base}/the-seasons`,
-    },
-    {
-      title: "The Healing Power of Flowers",
-      subtitle:
-        "Exploring the therapeutic benefits of floral essences and aromatherapy.",
-      image: "https://source.unsplash.com/featured/?flowers,therapy",
-      link: `${base}/the-seasons`,
-    },
-    {
-      title: "Floral Fashion: Trends and Inspirations",
-      subtitle:
-        "Discovering how flowers influence and inspire the world of fashion.",
-      image: "https://source.unsplash.com/featured/?flowers,fashion",
-      link: `${base}/the-seasons`,
-    },
-    {
-      title: "Embracing Floral Decor in Your Home",
-      subtitle:
-        "Incorporating flowers and botanical elements to enhance your living space.",
-      image: "https://source.unsplash.com/featured/?flowers,home",
-      link: `${base}/the-seasons`,
-    },
-    {
-      title: "Flowers Around the World: A Cultural Journey",
-      subtitle:
-        "Exploring the significance and traditions of flowers in different cultures.",
-      image: "https://source.unsplash.com/featured/?flowers,culture",
-      link: `${base}/the-seasons`,
-    },
-    {
-      title: "The Art of Ikebana: Japanese Flower Arranging",
-      subtitle:
-        "Learning the ancient art of harmonious flower arrangement from Japan.",
-      image: "https://source.unsplash.com/featured/?flowers,ikebana",
-      link: `${base}/the-seasons`,
-    },
-    {
-      title: "Flower Festivals: Celebrating Nature's Splendor",
-      subtitle:
-        "Participating in colorful and joyous festivals dedicated to flowers around the world.",
-      image: "https://source.unsplash.com/featured/?flowers,festival",
-      link: `${base}/the-seasons`,
-    },
-    {
-      title: "Edible Flowers: Culinary Delights from the Garden",
-      subtitle:
-        "Exploring the culinary uses and flavors of edible flowers in cooking.",
-      image: "https://source.unsplash.com/featured/?flowers,edible",
-      link: `${base}/the-seasons`,
-    },
-    {
-      title: "Preserving Flowers: Techniques for Lasting Beauty",
-      subtitle:
-        "Discovering methods to preserve flowers and create long-lasting floral arrangements.",
-      image: "https://source.unsplash.com/featured/?flowers,preservation",
-      link: `${base}/the-seasons`,
-    },
-    {
-      title: "Flowers in Literature: Symbolism and Inspiration",
-      subtitle:
-        "Exploring the role of flowers as symbols and motifs in literature and poetry.",
-      image: "https://source.unsplash.com/featured/?flowers,literature",
-      link: `${base}/the-seasons`,
-    },
-    {
-      title: "The Language of Flowers: A Historical Perspective",
-      subtitle:
-        "Tracing the history and evolution of the symbolic language of flowers.",
-      image: "https://source.unsplash.com/featured/?flowers,language",
-      link: `${base}/the-seasons`,
-    },
-    {
-      title: "Floral Artistry: Creative Expressions in Flower Arranging",
-      subtitle:
-        "Exploring innovative and artistic approaches to floral design and arrangement.",
-      image: "https://source.unsplash.com/featured/?flowers,artistry",
-      link: `${base}/the-seasons`,
-    },
-    {
-      title: "The Botanical Gardens: A Haven of Natural Splendor",
-      subtitle:
-        "Immersing yourself in the beauty and diversity of botanical gardens around the world.",
-      image: "https://source.unsplash.com/featured/?flowers,gardens",
-      link: `${base}/the-seasons`,
-    },
-    {
-      title: "Flowers in Mythology: Legends and Lore",
-      subtitle:
-        "Exploring the mythical and symbolic significance of flowers in ancient myths and legends.",
-      image: "https://source.unsplash.com/featured/?flowers,mythology",
-      link: `${base}/the-seasons`,
-    },
+    title: "The Power of Prayer",
+    subtitle: "Discover the transformative impact of prayer in your life. Learn how consistent prayer can bring peace, healing, and guidance.",
+    image: "https://source.unsplash.com/featured/?prayer,bible",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "Grace Unleashed",
+    subtitle: "Explore the boundless grace offered by God. Dive into stories of redemption, forgiveness, and second chances.",
+    image: "https://source.unsplash.com/featured/?grace,light",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "Walking by Faith",
+    subtitle: "Journey through life with unwavering faith. Find inspiration in biblical examples of faithfulness and trust.",
+    image: "https://source.unsplash.com/featured/?faith,path",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "Hope in the Storm",
+    subtitle: "When life's tempests rage, find hope in God's promises. Discover how faith can anchor your soul.",
+    image: "https://source.unsplash.com/featured/?hope,storm",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "Love Unconditional",
+    subtitle: "Exploring the depth of God's love for humanity. Reflect on the sacrificial love exemplified by Jesus.",
+    image: "https://source.unsplash.com/featured/?love,cross",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "Forgiveness Frees",
+    subtitle: "Unpacking the liberating power of forgiveness. Learn how extending grace can heal wounded hearts.",
+    image: "https://source.unsplash.com/featured/?forgiveness,healing",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "Faithfulness Rewarded",
+    subtitle: "Stories of unwavering loyalty and God's faithfulness. Encouragement for those enduring trials.",
+    image: "https://source.unsplash.com/featured/?faithfulness,loyalty",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "The Prodigal's Return",
+    subtitle: "A tale of redemption and reconciliation. How God welcomes us back with open arms.",
+    image: "https://source.unsplash.com/featured/?prodigal,return",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "Wisdom's Call",
+    subtitle: "Seeking divine wisdom in a chaotic world. Insights from the book of Proverbs.",
+    image: "https://source.unsplash.com/featured/?wisdom,book",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "Healing Waters",
+    subtitle: "Exploring the symbolism of water in the Bible. From baptism to spiritual renewal.",
+    image: "https://source.unsplash.com/featured/?water,baptism",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "Surrendered Heart",
+    subtitle: "The beauty of yielding to God's will. Surrendering our plans for His purpose.",
+    image: "https://source.unsplash.com/featured/?surrender,heart",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "Promises Fulfilled",
+    subtitle: "Tracing God's faithfulness through fulfilled prophecies. The hope found in Messianic promises.",
+    image: "https://source.unsplash.com/featured/?promises,fulfilled",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "Light in Darkness",
+    subtitle: "Finding hope in Christ's light. Overcoming despair through His presence.",
+    image: "https://source.unsplash.com/featured/?light,darkness",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "Living Sacrifice",
+    subtitle: "What it means to offer our lives as living sacrifices. Reflections on Romans 12:1.",
+    image: "https://source.unsplash.com/featured/?sacrifice,altar",
+    link: `${base}/the-seasons`,
+  },
+  {
+    title: "Red Sea Moments",
+    subtitle: "Navigating life's impossible situations. Trusting God when the sea seems unpassable.",
+    image: "https://source.unsplash.com/featured/?red-sea,miracle",
+    link: `${base}/the-seasons`,
+  }
   ];
 </script>
 
