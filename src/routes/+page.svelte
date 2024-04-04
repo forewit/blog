@@ -180,6 +180,7 @@
     scrollbar-width: none; /* for Firefox */
     overflow-y: scroll;
     overflow-x: hidden;
+    margin-bottom: -400px;
   }
   .page::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
@@ -211,7 +212,7 @@
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.1);
     margin-top: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 420px;
   }
   .quote-card {
     max-width: 500px;
