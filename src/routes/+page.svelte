@@ -186,7 +186,7 @@
     display: none; /* for Chrome, Safari, and Opera */
   }
   .cards {
-    padding: 25px;
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
