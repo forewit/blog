@@ -195,12 +195,8 @@
     gap: 20px;
   }
   .card {
-    transition: all var(--global-transition);
     max-width: 400px;
     height: max-content;
-  }
-  .card:hover {
-    scale: 1.05;
   }
 
   .verse {

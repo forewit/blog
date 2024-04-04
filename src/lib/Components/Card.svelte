@@ -27,7 +27,6 @@
     padding: 12px;
 
     /* text */
-    user-select: none;
     text-decoration: none;
     color: var(--global-color);
   }
@@ -43,9 +42,7 @@
 
   .image {
     grid-area: image;
-    
-    pointer-events: none;
-    width: 100%;
+        width: 100%;
     height: 100%;
     object-fit: cover;
   }
